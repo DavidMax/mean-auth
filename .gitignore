@@ -34,3 +34,6 @@ node_modules
 
 # Bower dependency directory
 public/lib
+
+# Webstorm related
+.idea*
