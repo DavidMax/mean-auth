@@ -1,0 +1,27 @@
+{
+  "name": "mean-auth",
+  "description": "MEAN Stack application",
+  "main": "index.js",
+  "authors": [
+    "David Max"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "ExpressJS",
+    "AngularJS",
+    "NodeJS"
+  ],
+  "homepage": "https://github.com/DavidMax/mean-auth",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ]
+}
