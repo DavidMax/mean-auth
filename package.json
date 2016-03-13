@@ -1,0 +1,31 @@
+{
+  "name": "mean-auth",
+  "version": "1.0.0",
+  "description": "MEAN Stack application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidMax/mean-auth.git"
+  },
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "ExpressJS",
+    "AngularJS",
+    "NodeJS"
+  ],
+  "author": "David Max",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidMax/mean-auth/issues"
+  },
+  "homepage": "https://github.com/DavidMax/mean-auth#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "multer": "^1.1.0"
+  }
+}
