@@ -21,13 +21,15 @@ angular
             })
             .state('signup', {
                 url: "/signup",
-                templateUrl: "views/sign-up.html"
+                templateUrl: "views/signup/signup.html",
+                controller: 'SignupController',
+                controllerAs: 'signup'
             })
             .state('login', {
                 url: "/login",
                 templateUrl: "views/login/login.html",
                 controller: 'LoginController',
-                controllerAs: 'LoginCtrl'
+                controllerAs: 'login'
             });
 
 
