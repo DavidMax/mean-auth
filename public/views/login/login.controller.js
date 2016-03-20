@@ -4,7 +4,7 @@ angular
     .module('MeanAuthApp')
 
     .controller('LoginController', ['$scope', '$http', function($scope, $http) {
-        $scope.login = function(user){
+        this.login = function(user){
 
             console.log(user);
 
@@ -18,4 +18,4 @@ angular
     }]);
 
 
-}())
+}());
