@@ -74,5 +74,28 @@ app.post('/login', passport.authenticate('local'), function(req, res){
   console.log(req.body);
 });
 
+app.post('/signup', function(req, res){
+    // check to see if user already exists
+    User.findOne({username: req.body.username}, function(err, user){
+        // if user already exists don't save but respond with null
+        if(user) {
+            res.json(null);
+            return;
+        } else {
+            var newUser = new User(req.body);
+            newUser.roles = ['trial'];
+            newUser.save(function(err, user){
+                // login the new user
+                req.login(user, function(err){
+                    if(err){ return next(err); }
+                    // send back new user object as JSON
+                    res.json(user);
+
+                });
+            });
+        }
+    });
+});
+
 app.listen(3000);
 console.log("Listening on PORT 3000");
