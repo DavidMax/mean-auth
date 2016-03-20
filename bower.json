@@ -1,7 +1,7 @@
 {
   "name": "mean-auth",
   "description": "MEAN Stack application",
-  "main": "index.js",
+  "main": "server.js",
   "authors": [
     "David Max"
   ],
